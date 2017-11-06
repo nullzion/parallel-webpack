@@ -22,8 +22,8 @@ availableExts.sort(function(a, b) {
 });
 
 function getMatchingLoaderFn(configPath, extensions, variants) {
-    let availableExtensions =  extensions || availableExts;
-    let jsVariants = variants || jsVars;
+    var availableExtensions =  extensions || availableExts;
+    var jsVariants = variants || jsVars;
     for(var i = 0, len = availableExtensions.length; i < len; i++) {
         var ext = availableExtensions[i];
         if(endsWith(configPath, ext)) {
@@ -45,7 +45,7 @@ function getConfig(configPath) {
 
 module.exports = {
     default: function(configPath, matchingLoader) {
-        let getMatchingLoader = matchingLoader || getMatchingLoaderFn;
+        var getMatchingLoader = matchingLoader || getMatchingLoaderFn;
 
         var mod = getMatchingLoader(configPath);
         if(mod) {

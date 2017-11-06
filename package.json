@@ -1,5 +1,5 @@
 {
-  "name": "parallel-webpack",
+  "name": "parallel-webpack-node4",
   "version": "2.2.0",
   "description": "Builds multiple webpack configurations in parallel and allows you to easily create variants to those configurations.",
   "main": "index.js",
